@@ -32,11 +32,11 @@ const Contact = () => {
           {/* Título principal */}
           <header className="mb-6">
             <h1 className="text-3xl lg:text-5xl font-bold text-teal-400 mb-4">
-              {t("Contactame")}
+              {t("contact")}
             </h1>
             <p className="text-base lg:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0">
               {t(
-                "Si tienes preguntas, propuestas o simplemente quieres saludar, ¡escríbeme!"
+                "finalText"
               )}
             </p>
           </header>
@@ -49,7 +49,7 @@ const Contact = () => {
                 className="flex final-button px-2 py-1 neon-container shadow-md hover:scale-105 gap-1 lg:py-2 "
               >
                 <MdEmail className="text-2xl lg:text-2xl" />
-                <span className="text-sm lg:text-base font-medium">Correo Electrónico</span>
+                <span className="text-sm lg:text-base font-medium">{t('email')}</span>
               </a>
               {/* WhatsApp */}
               <a
@@ -114,10 +114,10 @@ const Contact = () => {
             </a>
             </div>
         </section>
-
         {/* Derechos reservados */}
         <footer className="mt-16 mb-6 text-center text-gray-400 text-sm">
-            © {new Date().getFullYear()} Todos los derechos reservados. Dalejo España.
+          © {new Date().getFullYear() } 
+          {t("copy")}
         </footer>
     </div>
   );

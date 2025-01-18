@@ -14,30 +14,30 @@ const Projects = () => {
       github: "https://github.com/your-portfolio-repo",
     },
     {
-      title: "Aplicacion Movil GymApp",
+      title: t("proyectTitle2"),
       description:
-        "Una aplicación móvil diseñada específicamente para la administración y gestión de gimnasios. Ofrece inicio de sesión diferenciado para administradores y clientes, proporcionando funcionalidades personalizadas según el rol.",
+        t("proyectDescription2"),
       technologies: ["Flutter", "Dart", "Firebase"],
       github: "https://github.com/DiegoEspx/GymApp",
     },
     {
-      title: "Backend para Gestor de Salas de Computadoras",
+      title: t("proyectTitle3"),
       description:
-        "Desarrollado con Django y Django REST Framework, incluye funcionalidades CRUD completas, actualización dinámica de datos mediante señales y endpoints detallados para consultar computadoras ocupadas, libres y detalles de cada sala. Ideal para integración con frontend y despliegue en la nube.",
+      t("proyectDescription3"),  
       technologies: ["Python", "Django", "DRF", "Azure", "Postgres"],
       github: "https://github.com/DiegoEspx/Back-Gestion-Salas.git",
     },
     { 
-      title: "Frontend para un Gestor de Salas de Computadoras",
+      title: t("proyectTitle4"),
       description:
-        "Frontend con interfaz gráfica para la gestión de salas de computadoras, incluyendo funciones CRUD conectadas a un backend alojado en Azure. La aplicación permite sincronización de datos en tiempo real y ofrece una experiencia moderna, optimizada para usabilidad y accesibilidad.",
+      t("proyectDescription4"),  
       technologies: ["React", "Typescript", "Tailwind CSS","Vite"],
       github: "https://github.com/DiegoEspx/Front-Gestion-Salas",
     },
     {
-      title: "Sistema de Gestión de Inventarios y Recetas Culinarias",
+      title: t("proyectTitle5"),
       description:
-        "Sistema en Java para gestionar ingredientes, crear recetas ajustadas a costos y comensales, y visualizar listas de recetas. Ideal para aprender programación orientada a objetos con un menú interactivo en consola.",
+      t("proyectDescription5"),  
       technologies: ["Java"],
       github: "https://github.com/DiegoEspx/Control-Recetas-Ingredientes-.git",
     },
@@ -66,13 +66,12 @@ const Projects = () => {
           className="text-5xl font-bold mb-4"
           style={{ color: "#81FFC3" }} // Color verde suave para el título
         >
-          Projects
+          {t("proyect")}
         </h1>
         <p className="text-lg max-w-lg mx-auto">
-          Explore my latest projects, each crafted with modern technologies and attention to detail.
+          {t("proyectDescription")}
         </p>
       </div>
-
       {/* Sección de proyectos */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl">
         {projects.map((project, index) => (
@@ -102,12 +101,12 @@ const Projects = () => {
             </h2>
 
             {/* Descripción */}
-            <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+            <p className="text-gray-300 text-justify text-sm mb-4">{project.description}</p>
 
             {/* Tecnologías */}
             <div className="mb-4">
               <h3 className="text-md font-semibold mb-2" style={{ color: neonColors[index % neonColors.length] }}>
-                Technologies:
+                {t("tecnologias")}
               </h3>
               <ul className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
@@ -137,7 +136,7 @@ const Projects = () => {
               }}
             >
               <PiGithubLogoFill className="text-xl mr-2" />
-              View on GitHub
+              {t("Viewgithub")}
             </a>
           </div>
         ))}
@@ -189,7 +188,8 @@ const Projects = () => {
           
                   {/* Derechos reservados */}
                   <footer className="mt-16 mb-6 text-center text-gray-400 text-sm">
-                      © {new Date().getFullYear()} Todos los derechos reservados. Dalejo España.
+                      © {new Date().getFullYear() } 
+                      {t("copy")}
                   </footer>
         </div>  
   );

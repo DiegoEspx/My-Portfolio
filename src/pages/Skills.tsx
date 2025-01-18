@@ -11,9 +11,9 @@ const Skills = () => {
   const { t } = useTranslation();
   const skillGroups = [
     {
-      group: "Frontend Development",
+      group: t("frontText"),
       icon: <FaReact />,
-      description: "Technologies for building visually appealing and interactive user interfaces.",
+      description: t("frontText2"),
       skills: [
         { name: "HTML", icon: <FaHtml5 />, color: "#FF5733" },
         { name: "CSS", icon: <FaCss3Alt />, color: "#007BFF" },
@@ -26,9 +26,9 @@ const Skills = () => {
       ],
     },
     {
-      group: "Backend Development",
+      group:  t("backText"),
       icon: <FaPython />,
-      description: "Tools and frameworks for building powerful server-side applications.",
+      description:  t("backText2"),
       skills: [
         { name: "Python", icon: <FaPython />, color: "#306998" },
         { name: "Django", icon: <SiDjango />, color: "#1DBF73" }, 
@@ -38,9 +38,9 @@ const Skills = () => {
       ],
     },
     {
-      group: "Databases",
+      group: t("baseDatos"),
       icon: <SiPostgresql />,
-      description: "Technologies for efficient data storage and management.",
+      description: t("baseDatos2"),
       skills: [
         { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" },
         { name: "MySQL", icon: <SiMysql />, color: "#00758F" },
@@ -48,9 +48,9 @@ const Skills = () => {
       ],
     },
     {
-      group: "Version Control & Others",
+      group: t("other"),
       icon: <FaGithub />,
-      description: "Essential tools for collaboration, version control, and deployment.",
+      description: t("other2"),
       skills: [
         { name: "Vercel", icon: <SiVercel />, color: "#ffffff" },
         { name: "Azure", icon: <VscAzure />, color: "#0078D7" },
@@ -79,10 +79,9 @@ const Skills = () => {
             color: "#81FFC3",
           }}
         >
-          Skills
+          {t("skills")}
         </h1>
       </div>
-
       {/* Barra de navegación*/}
       <div className="flex flex-wrap justify-center -mt-11 lg:-mt-4 mb-8 space-x-2 ">
         {skillGroups.map((group) => (
@@ -196,8 +195,9 @@ const Skills = () => {
               </section>
       
               {/* Derechos reservados */}
-              <footer className="mt-10 mb-6 text-center text-gray-400 text-sm">
-                  © {new Date().getFullYear()} Todos los derechos reservados. Dalejo España.
+              <footer className="mt-16 mb-6 text-center text-gray-400 text-sm">
+                  © {new Date().getFullYear() } 
+                  {t("copy")}
               </footer>
     </div>
   );

@@ -1,13 +1,14 @@
 //tiempo libre
-import calistenia from "../img/calistenia.jpg";
-import gym from "../img/gym.jpg";
+import calistenia from "../img/calistenia.webp";
+import gym from "../img/gym.webp";
 import musica from "../img/musica.webp";
-import videojuego from "../img/videojuego.png"
+import videojuego from "../img/videojuego.webp"
 //tiempo acompañado
-import amigos from "../img/amigos.jpg";
-import comida from "../img/comida.jpg";
-import jugando from "../img/jugando.jpeg";
-import futbol from "../img/futbol.jpg"
+import amigos from "../img/amigos.webp";
+import comida from "../img/comida.webp";
+import jugando from "../img/jugando.webp";
+import futbol from "../img/futbol.webp"
+
 import { PiGithubLogoFill } from "react-icons/pi";
 import { ImLinkedin2 } from "react-icons/im";
 import { IoLogoVercel } from "react-icons/io5";
@@ -58,7 +59,7 @@ const AboutMe = () => {
         >
           {t("hobbies")}
         </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+        <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
           {hobbies.map((hobby, index) => (
             <div
               key={index}
@@ -203,8 +204,9 @@ const AboutMe = () => {
       
               {/* Derechos reservados */}
               <footer className="mt-16 mb-6 text-center text-gray-400 text-sm">
-                  © {new Date().getFullYear()} Todos los derechos reservados. Dalejo España.
-              </footer>
+                      © {new Date().getFullYear() } 
+                      {t("copy")}
+                  </footer>
     </div>
   );
 };
