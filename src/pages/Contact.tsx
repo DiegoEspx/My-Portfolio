@@ -45,27 +45,26 @@ const Contact = () => {
             <div className="flex gap-5">
               {/* Correo electrónico */}
               <a
-                href="mailto:"
+                href="mailto:dalejo.espana@gmail.com"
                 className="flex final-button px-2 py-1 neon-container shadow-md hover:scale-105 gap-1 lg:py-2 "
               >
                 <MdEmail className="text-2xl lg:text-2xl" />
                 <span className="text-sm lg:text-base font-medium">{t('email')}</span>
               </a>
-              {/* WhatsApp */}
               <a
-                href="https://wa.me/123456789"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex final-button px-2 neon-container shadow-md hover:scale-105 gap-2"
+                  href="https://wa.me/573127261552?text=¡Hola!%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podrías%20brindarme%20más%20información?%20😊"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex final-button px-2 neon-container shadow-md hover:scale-105 gap-2"
               >
-                <FaWhatsapp className="text-2xl lg:text-2xl" />
-                <span className="text-sm lg:text-base font-medium">WhatsApp</span>
+                  <FaWhatsapp className="text-2xl lg:text-2xl" />
+                  <span className="text-sm lg:text-base font-medium">WhatsApp</span>
               </a>
             </div>
             {/* Ubicación */}
             <div className="flex items-center py-1 px-2 rounded-xl lg:w-auto justify-center lg:justify-start">
               <MdLocationOn className="text-2xl lg:text-2xl mr-3 text-teal-400" />
-              <span className="text-sm text-gray-300">Colombia - Pasto - Nariño</span>
+              <span className="text-sm text-gray-300">Colombia-Nariño-Pasto</span>
             </div>
           </section>
         </div>

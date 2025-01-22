@@ -41,13 +41,7 @@ const Projects = () => {
       technologies: ["Java"],
       github: "https://github.com/DiegoEspx/Control-Recetas-Ingredientes-.git",
     },
-    {
-      title: "Chat Application",
-      description:
-        "A real-time chat application with socket.io and user authentication.",
-      technologies: ["React", "Socket.io", "Firebase"],
-      github: "https://github.com/your-chat-app-repo",
-    },
+    
   ];
 
   const neonColors = ["#00C9FF", "#00FF94", "#FFD700", "#B15DFF", "#FF5733", "#33FF57", "#57D3FF", "#FF33A6"];// Tonos suaves que combinan con el fondo
@@ -63,17 +57,17 @@ const Projects = () => {
       {/* Título principal */}
       <div className="text-center mb-12">
         <h1
-          className="text-5xl font-bold mb-4"
-          style={{ color: "#81FFC3" }} // Color verde suave para el título
+          className="text-3xl md:text-4xl lg:text-5xl lg:mb-8 font-bold mb-4"
+          style={{ color: "#81FFC3" }} 
         >
           {t("proyect")}
         </h1>
-        <p className="text-lg max-w-lg mx-auto">
+        <p className="text-sm mb-3 md:text-xl lg:text-base md:mb-4 lg:mb-8 max-w-lg mx-auto">
           {t("proyectDescription")}
         </p>
       </div>
       {/* Sección de proyectos */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mt-10 gap-10 w-full max-w-6xl">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -84,25 +78,21 @@ const Projects = () => {
               boxShadow: `0 0 10px ${neonColors[index % neonColors.length]}50`,
             }}
           >
-            {/* Fondo animado sutil */}
             <div
               className="absolute inset-0 z-[-1] rounded-lg blur-sm animate-pulse"
               style={{
                 background: `radial-gradient(circle, ${neonColors[index % neonColors.length]}30, transparent)`,
               }}
             ></div>
-
             {/* Título del proyecto */}
             <h2
-              className="text-2xl font-bold mb-2"
+              className="md:text-xl lg:text-2xl font-bold mb-2"
               style={{ color: neonColors[index % neonColors.length] }}
             >
               {project.title}
             </h2>
-
             {/* Descripción */}
-            <p className="text-gray-300 text-justify text-sm mb-4">{project.description}</p>
-
+            <p className="text-gray-300 text-justify text-sm lg:text-base mb-4">{project.description}</p>
             {/* Tecnologías */}
             <div className="mb-4">
               <h3 className="text-md font-semibold mb-2" style={{ color: neonColors[index % neonColors.length] }}>

@@ -3,7 +3,7 @@
     import { HiOutlineChevronDown } from "react-icons/hi"; // Icono para desplegable
     import { FaBars, FaTimes } from "react-icons/fa"; // Iconos para el menú desplegable
     import { useTranslation } from "react-i18next";
-    import i18n from "../i18n"; // Asegúrate de que esta ruta sea la correcta
+    import i18n from "../i18n"; 
 
     export function Navigation() {
     const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
@@ -12,9 +12,9 @@
     const { t } = useTranslation();
 
     const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng); // Cambiar idioma en i18n
+        i18n.changeLanguage(lng); 
         console.log(`Idioma cambiado a: ${lng}`);
-        setLanguageMenuOpen(false); // Cierra el menú al seleccionar un idioma
+        setLanguageMenuOpen(false);
     };
 
     // Lista de rutas con traducción
@@ -30,7 +30,7 @@
     const flagSrc =
         currentLanguage === "en"
         ? "https://flagcdn.com/w40/us.png"
-        : "https://flagcdn.com/w40/es.png";
+        : "https://flagcdn.com/w40/co.png";
 
     return (
         <>
@@ -39,12 +39,12 @@
             {/* Parte izquierda */}
             <Link
             to="/"
-            className="tracking-wide animate-glow pl-10" // Clase para animación
+            className="tracking-wide animate-glow pl-10"
                 style={{
                 fontFamily: "'Poppins', sans-serif",
-                fontSize: "1.3rem", // Tamaño del texto
+                fontSize: "1.3rem",
                 fontWeight: "bold",
-                color: "#ffffff", // Blanco para el texto base
+                color: "#ffffff", 
                 }}
 
             >
@@ -87,7 +87,7 @@
             {/* Selector de idioma */}
             <div className="relative">
                 <button
-                className="flex items-center gap-2 px-4 py-2 text-white rounded-full shadow-md hover:bg-gray-800"
+                className="flex items-center gap-2 px-4 py-2 text-white rounded-full shadow-md hover:bg-gray-600"
                 onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
                 >
                 <img
@@ -98,7 +98,7 @@
                 <HiOutlineChevronDown />
                 </button>
                 {languageMenuOpen && (
-                <div className="absolute top-full mt-2 -ml-2.5 bg-gray-800/90 text-white rounded-lg shadow-lg overflow-hidden">
+                <div className="absolute top-full mt-2 -ml-2.5 text-white rounded-lg shadow-lg overflow-hidden">
                     <button
                     className="flex items-center px-2 mr-6 py-2 w-full hover:bg-gray-700/60"
                     onClick={() => changeLanguage("en")}
@@ -115,7 +115,7 @@
                     onClick={() => changeLanguage("es")}
                     >
                     <img
-                        src="https://flagcdn.com/w40/es.png"
+                        src="https://flagcdn.com/w40/co.png"
                         alt="Español"
                         className="w-5 h-5 mr-2"
                     />
@@ -134,7 +134,7 @@
         </nav>
 
         {/* Barra de navegación para pantallas pequeñas */}
-        <div className="lg:hidden fixed top-0 left-0 w-full px-4 py-8 z-50 flex items-center justify-between text-white bg-transparent">
+        <div className="lg:hidden fixed top-0 left-0 w-full  md:px-10 px-4 py-8 z-50 flex items-center justify-between text-white bg-transparent">
             {/* Nombre a la izquierda */}
             <Link
             to="/"
@@ -151,7 +151,7 @@
             {/* Selector de idioma */}
             <div className="">
             <button
-                className="flex items-center gap-2 px-2 py-2 mr-10  text-white rounded-full shadow-md hover:bg-gray-800"
+                className="flex items-center gap-2 px-2 py-2 md:mr-96  text-white rounded-full shadow-md hover:bg-gray-800"
                 onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
             >
                 <img
@@ -162,7 +162,7 @@
                 <HiOutlineChevronDown />
             </button>
             {languageMenuOpen && (
-                <div className="absolute top-full  -mt-10 -ml-3.5 bg-gray-800/90 text-white rounded-lg shadow-lg overflow-hidden">
+                <div className="absolute top-full  -mt-10 -ml-3.5  text-white rounded-lg shadow-lg overflow-hidden">
                 <button
                     className="flex items-center px-2 py-2 w-full hover:bg-gray-700/60"
                     onClick={() => changeLanguage("en")}
@@ -179,7 +179,7 @@
                     onClick={() => changeLanguage("es")}
                 >
                     <img
-                    src="https://flagcdn.com/w40/es.png"
+                    src="https://flagcdn.com/w40/co.png"
                     alt="Español"
                     className="w-5 h-5 mr-2"
                     />

@@ -78,7 +78,7 @@ const AboutMe = () => {
         </div>
       </section>
       {/* Tiempo Libre */}
-<section className="flex flex-wrap lg:flex-nowrap items-center mt-20 gap-10">
+<section className="flex flex-wrap lg:flex-nowrap items-center justify-center mt-20 gap-10">
   {/* Texto */}
   <div className="lg:w-1/2 lg:order-2">
     <h3

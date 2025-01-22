@@ -2,19 +2,24 @@
     import { IoLogoVercel } from "react-icons/io5";
     import { PiGithubLogoFill } from "react-icons/pi";
     import { ImLinkedin2 } from "react-icons/im";
+    import { useNavigate } from "react-router-dom";
     const Home = () => {
+    const navigate = useNavigate();
+    const handleRedirect = () => {
+          navigate("/contact"); // Redirige a la pestaña de contacto
+        };
     const { t } = useTranslation();
 
     return (
         <div
         className="min-h-screen flex flex-col items-center text-white relative"
         style={{
-            background: "radial-gradient(circle, #004d39, #001a13, #000000)", // Fondo negro con centro verde
+            background: "radial-gradient(circle, #004d39, #001a13, #000000)", 
             fontFamily: "'Poppins', sans-serif",
         }}
         >
         {/* Contenido */}
-        <main className="flex flex-col lg:grid lg:grid-cols-2  items-center px-6 lg:px-32 w-full pt-28 py-12 lg:pt-36">
+        <main className="flex flex-col lg:grid lg:grid-cols-2 items-center px-6 lg:px-32 w-full p-9 lg:py-12 lg:pt-36">
             {/* Texto */}
             <div className="text-center lg:text-left lg:pt-18 lg:ml-28 order-2 lg:order-none">
                 <h1 className="text-3xl lg:text-3xl -mt-4 font-extrabold mb-4  efecto-neon">
@@ -33,21 +38,20 @@
                 {/* Botón de contacto */}
                 <div className="mt-12 flex justify-center">
                     <a
-                    href="/contact" // Redirige a la sección de contacto
+                    onClick={handleRedirect} //seccion de contacto
                     className=" contact-button neon-container text-black font-bold py-3 px-6 rounded-full shadow-md hover:scale-105"
                     >
                     {t("titleContact")}
                     </a>
                 </div>
             </div>
-
             {/* Imagen del oso */}
             <div
             className="user-oso flex justify-center items-center order-1 lg:order-none"
             style={{
                 
-                height: "28rem", // Altura proporcional
-                backgroundSize: "contain", // Ajustar la imagen sin recortarla
+                height: "28rem", 
+                backgroundSize: "contain",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
             }}
