@@ -1,9 +1,40 @@
 {
     "routes": [
-            {
-                "route": "/*",
-                "serve": "/index.html",
-                "statusCode": 200
-            }
-        ]
-}
+      {
+        "route": "/",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/home",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/about-me",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/projects",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/skills",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/contact",
+        "serve": "/index.html",
+        "statusCode": 200
+      },
+      {
+        "route": "/*",
+        "serve": "/index.html",
+        "statusCode": 404
+      }
+    ]
+  }
+  
