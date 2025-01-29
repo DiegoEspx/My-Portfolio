@@ -175,7 +175,7 @@ const Skills = () => {
                   </a>
                   {/* LinkedIn */}
                   <a
-                  href="https://www.linkedin.com/in/diego-espa%C3%B1a-9b801a1ab/"
+                  href="https://www.linkedin.com/in/dalejo-espana/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="neon-container button-effect text-xl icon-container bg-white hover:bg-black"

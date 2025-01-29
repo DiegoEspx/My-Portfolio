@@ -51,8 +51,9 @@ const Contact = () => {
                 <MdEmail className="text-2xl lg:text-2xl" />
                 <span className="text-sm lg:text-base font-medium">{t('email')}</span>
               </a>
+              {/*Whatsapp */}
               <a
-                  href="https://wa.me/573127261552?text=¡Hola!%20Estoy%20interesado%20en%20tus%20servicios.%20¿Podrías%20brindarme%20más%20información?%20😊"
+                  href="https://wa.me/573127261552?text=¡Hola!%20👋%20Estoy%20interesado%20en%20tus%20servicios.%20💼%20¿Podrías%20brindarme%20más%20información?%20📩%20Muchas%20gracias!%20https://wa.me/573127261552?text=¡Saludos!%20👋%20Estoy%20interesado%20en%20tus%20servicios.%20💼%20¿Podrías%20brindarme%20más%20información?%20📩%20Muchas%20gracias!%20😁"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex final-button px-2 neon-container shadow-md hover:scale-105 gap-2"
@@ -95,7 +96,7 @@ const Contact = () => {
             </a>
             {/* LinkedIn */}
             <a
-            href="https://www.linkedin.com/in/diego-espa%C3%B1a-9b801a1ab/"
+            href="https://www.linkedin.com/in/dalejo-espana/"
             target="_blank"
             rel="noopener noreferrer"
             className="neon-container button-effect text-xl icon-container bg-white hover:bg-black"

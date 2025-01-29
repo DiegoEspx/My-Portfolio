@@ -87,7 +87,7 @@
             {/* Selector de idioma */}
             <div className="relative">
                 <button
-                className="flex items-center gap-2 px-4 py-2 text-white rounded-full shadow-md hover:bg-gray-600"
+                className="flex items-center gap-2 px-4 py-2 text-white rounded-full shadow-md hover:bg-gray-500"
                 onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
                 >
                 <img
@@ -98,9 +98,9 @@
                 <HiOutlineChevronDown />
                 </button>
                 {languageMenuOpen && (
-                <div className="absolute top-full mt-2 -ml-2.5 text-white rounded-lg shadow-lg overflow-hidden">
+                <div className="absolute top-full mt-2 -ml-2.5 text-white  rounded-lg shadow-lg overflow-hidden">
                     <button
-                    className="flex items-center px-2 mr-6 py-2 w-full hover:bg-gray-700/60"
+                    className="flex items-center px-2 mr-6 py-2 w-full hover:bg-gray-500/60"
                     onClick={() => changeLanguage("en")}
                     >
                     <img
@@ -111,7 +111,7 @@
                     English
                     </button>
                     <button
-                    className="flex items-center px-2 py-2 w-full hover:bg-gray-700/60"
+                    className="flex items-center px-2 py-2 w-full hover:bg-gray-500/60"
                     onClick={() => changeLanguage("es")}
                     >
                     <img
@@ -151,7 +151,7 @@
             {/* Selector de idioma */}
             <div className="">
             <button
-                className="flex items-center gap-2 px-2 py-2 md:mr-96  text-white rounded-full shadow-md hover:bg-gray-800"
+                className="flex items-center gap-2 px-2 py-2 md:mr-96  text-white rounded-full shadow-md hover:bg-gray-500"
                 onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
             >
                 <img
@@ -162,9 +162,9 @@
                 <HiOutlineChevronDown />
             </button>
             {languageMenuOpen && (
-                <div className="absolute top-full  -mt-10 -ml-3.5  text-white rounded-lg shadow-lg overflow-hidden">
+                <div className="absolute top-full  -mt-10 -ml-3.5  text-white  bg-gray-500 rounded-lg shadow-lg overflow-hidden">
                 <button
-                    className="flex items-center px-2 py-2 w-full hover:bg-gray-700/60"
+                    className="flex items-center px-2 py-2 w-full hover:bg-gray-500/60"
                     onClick={() => changeLanguage("en")}
                 >
                     <img
@@ -175,7 +175,7 @@
                     English
                 </button>
                 <button
-                    className="flex items-center px-2 py-2 w-full hover:bg-gray-700/60"
+                    className="flex items-center px-2 py-2 w-full hover:bg-gray-500/60"
                     onClick={() => changeLanguage("es")}
                 >
                     <img
