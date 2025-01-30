@@ -53,8 +53,7 @@ const Contact = () => {
               </a>
               {/*Whatsapp */}
               <a
-                  href="https://wa.me/573127261552?text=%C2%A1Saludos!%20%F0%9F%91%8B%20Estoy%20interesado%20en%20tus%20servicios.%20%F0%9F%92%BC%20%C2%BFPodr%C3%ADas%20brindarme%20m%C3%A1s%20informaci%C3%B3n?%20%F0%9F%93%A9%20Muchas%20gracias!%20%F0%9F%98%81
-"
+                  href="https://wa.me/573127261552?text=%C2%A1Hola!%20Estoy%20interesado%20en%20tus%20servicios.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20al%20respecto.%20%20%C2%A1Muchas%20gracias!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex final-button px-2 neon-container shadow-md hover:scale-105 gap-2"
