@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { FaPython, FaJs, FaHtml5, FaCss3Alt, FaReact, FaJava, FaGit, FaGithub } from "react-icons/fa";
 import { ImLinkedin2 } from "react-icons/im";
 import { PiGithubLogoFill } from "react-icons/pi";
-import { SiAngular, SiTailwindcss, SiTypescript, SiPrisma, SiVite, SiDocker, SiPostgresql, SiMysql, SiVercel, SiFlutter, SiDjango, SiFirebase } from "react-icons/si";
+import { SiAngular, SiTailwindcss, SiTypescript, SiVite, SiDocker, SiPostgresql, SiMysql, SiVercel, SiFlutter, SiDjango, SiFirebase } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 import { IoLogoVercel } from "react-icons/io5";
 
