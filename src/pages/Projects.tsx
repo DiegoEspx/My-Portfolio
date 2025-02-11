@@ -7,13 +7,6 @@ const Projects = () => {
   const { t } = useTranslation();
   const projects = [
     {
-      title: "Portfolio Website",
-      description:
-        "A personal portfolio website showcasing my skills, projects, and contact information.",
-      technologies: ["React", "Tailwind CSS", "JavaScript"],
-      github: "https://github.com/your-portfolio-repo",
-    },
-    {
       title: t("proyectTitle2"),
       description:
         t("proyectDescription2"),

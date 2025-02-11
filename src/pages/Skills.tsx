@@ -33,7 +33,6 @@ const Skills = () => {
         { name: "Python", icon: <FaPython />, color: "#306998" },
         { name: "Django", icon: <SiDjango />, color: "#1DBF73" }, 
         { name: "Java", icon: <FaJava />, color: "#F89820" },
-        { name: "Prisma", icon: <SiPrisma />, color: "#e200e6" },
         { name: "Docker", icon: <SiDocker />, color: "#2496ED" },
       ],
     },
